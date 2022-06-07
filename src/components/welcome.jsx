@@ -1,4 +1,5 @@
 import React from "react";
+import ProBoneO from "./ProBoneO/ProBoneO";
 import '../styles/welcome.css';
 
 function Welcome() {
@@ -15,7 +16,7 @@ function Welcome() {
         </div>
         
         <div class="section bg-blue">
-          Content 2
+          <ProBoneO />
         </div>
         
         <div class="section bg-green">
