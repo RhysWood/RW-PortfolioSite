@@ -1,8 +1,5 @@
 import * as React from 'react';
-import { InView } from 'react-intersection-observer'
-import Box from '@mui/material/Box';
 import Switch from '@mui/material/Switch';
-import Paper from '@mui/material/Paper';
 import Grow from '@mui/material/Grow';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import '../ProBoneO/proboneo.css'; 
