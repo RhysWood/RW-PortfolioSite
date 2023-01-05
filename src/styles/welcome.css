@@ -20,6 +20,9 @@ body {
 }
 
 .bg-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #b1e5d8;
 }
 

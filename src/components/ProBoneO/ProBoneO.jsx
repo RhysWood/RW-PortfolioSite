@@ -4,7 +4,6 @@ import Grow from '@mui/material/Grow';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import '../ProBoneO/proboneo.css'; 
 
-
 function ProBoneO() {
     const icon = (
         <div className='parent'>
@@ -15,8 +14,7 @@ function ProBoneO() {
         </div>
     );
     const [checked, setChecked] = React.useState(false);
-    const [inView, setInView] = React.useState(false)
-
+    
     const handleChange = () => {
       setChecked((prev) => !prev);
     };
@@ -34,7 +32,6 @@ function ProBoneO() {
         >
           {icon}
         </Grow>
-
         </>
     );
 }

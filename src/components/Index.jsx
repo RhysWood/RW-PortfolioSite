@@ -1,11 +1,12 @@
 import React from "react";
 import ProBoneO from "./ProBoneO/ProBoneO";
+import Navbar from "./Navigation/navbar";
 import '../styles/welcome.css';
 
 function Welcome() {
     return ( 
       <>
-
+      <Navbar />
       <div class="wrapperparent">
         <div class="section">
         <div class="wrapper">
