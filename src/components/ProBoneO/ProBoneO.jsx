@@ -20,7 +20,7 @@ function ProBoneO() {
     };
 
     return (
-        <>
+        <div id="goat">
         <FormControlLabel
             control={<Switch checked={checked} onChange={handleChange} />}
             label="Show"
@@ -32,7 +32,7 @@ function ProBoneO() {
         >
           {icon}
         </Grow>
-        </>
+        </div>
     );
 }
 

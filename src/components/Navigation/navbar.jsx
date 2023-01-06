@@ -15,9 +15,9 @@ const Navbar = () => {
       <div className="nav-wrapper">
       <div className="nav-child">Rhys Wood</div>
       <div className="nav-options">
-        <div>Hello</div>
-        <div>Hello</div>
-        <div>Hello</div>
+        <div>Goat Creative Inc</div>
+        <div>Lighthouse Labs</div>
+        <div>Vessel Packaging</div>
       </div>
       </div>
     </nav>
