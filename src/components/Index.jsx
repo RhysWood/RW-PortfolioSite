@@ -4,31 +4,33 @@ import Navbar from "./Navigation/navbar";
 import '../styles/welcome.css';
 
 function Welcome() {
+
+
     return ( 
       <>
       <Navbar />
-      <div class="wrapperparent">
-        <div class="section">
-        <div class="wrapper">
-              <div class="typing-demo">
+      <div className="wrapperparent">
+        <div className="section">
+        <div className="wrapper">
+              <div className="typing-demo">
                 This is a portfolio by Rhys Wood.
               </div>
           </div>
         </div>
         
-        <div class="section bg-blue">
+        <div className="section bg-blue">
           <ProBoneO />
         </div>
         
-        <div class="section bg-green">
+        <div className="section bg-green">
           Content 3
         </div>
         
-        <div class="section">
+        <div className="section">
           Content 4
         </div>
         
-        <div class="section bg-blue">
+        <div className="section bg-blue">
           Content 5
         </div>
       </div>

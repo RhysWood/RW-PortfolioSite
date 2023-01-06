@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
 import "../Navigation/nav.scss";
 
 const Navbar = () => {
+  const element = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      element.current.className = 'fade-in';
+      console.log("fade in");
+    }, 2000);
+  }, []);
   return (
-    <>
-      <nav class="flex">
-        <div class="text-white font-bold text-xl">My App</div>
-        <div class="flex space-x-3">
-          <div>Hello</div>
-          <div>Hello</div>
-          <div>Hello</div>
-        </div>
-      </nav>
-    </>
+    <nav ref={element} className="gone">
+      <div className="nav-wrapper">
+      <div className="nav-child">Rhys Wood</div>
+      <div className="nav-options">
+        <div>Hello</div>
+        <div>Hello</div>
+        <div>Hello</div>
+      </div>
+      </div>
+    </nav>
   );
 };
 
