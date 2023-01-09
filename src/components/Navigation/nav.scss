@@ -1,3 +1,73 @@
+.NavbarItems {
+    background: #231f20; 
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.vlogo {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+    height: auto;
+    width: 8rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 7rem;
+    margin-top: 10px;
+}
+
+.nav-links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    font-family: 'NeueMontreal-Italic', sans-serif;
+}
+
+.nav-links:hover{
+    color: #fe6d73;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    /* margin-right: 20px; */
+}
+
+.welcomeName {
+    color: #fcc860;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -8,6 +78,10 @@
     top: 0;
     width: 100%;
     z-index: 100;
+    a {
+        text-decoration: none;
+        color: #231f20;
+    }
 }
 
 .nav-child {
@@ -19,6 +93,9 @@
     max-width: 1200px;
     width: 100%;
     margin-left: 14rem;
+    a {
+        font-family: 'NeueMontreal-Book';
+    }
 }
 
 .nav-options {
@@ -41,3 +118,88 @@
   .gone {
     opacity: 0;
   }
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        display: block;
+        background: #231f20;
+        left: 0;
+        margin-top: 10px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: #231f20;
+        border-radius: 0;
+    }
+
+    .navbar-logo{
+        position: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #a2caa4;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-links-mobile:hover {
+        background: #fff;
+        color: #6668f4;
+        transition: 250ms;
+    }
+
+    Button {
+        display: none;
+    }
+
+}

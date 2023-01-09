@@ -2,9 +2,9 @@ import * as React from 'react';
 import Switch from '@mui/material/Switch';
 import Grow from '@mui/material/Grow';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import '../ProBoneO/proboneo.css'; 
+import './lighthouse.scss'; 
 
-function ProBoneO() {
+function Lighthouse() {
     const icon = (
         <div className='parent'>
         <div className='title'>
@@ -36,4 +36,4 @@ function ProBoneO() {
     );
 }
 
-export default ProBoneO;
+export default Lighthouse;

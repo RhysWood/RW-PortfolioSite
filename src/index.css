@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'NeueMontreal-Book';
+  src: local('MyFont'), url(./fonts/PPNeueMontreal-Book.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: local('MyFont'), url(./fonts/PPNeueMontreal-Bold.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
+@font-face {
+  font-family: 'NeueBit-Bold';
+  src: local('MyFont'), url(./fonts/PPNeueBit-Bold.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'NeueBit-Regular';
+  src: local('MyFont'), url(./fonts/PPNeueBit-Regular.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Italic';
+  src: local('MyFont'), url(./fonts/PPNeueMontreal-Italic.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

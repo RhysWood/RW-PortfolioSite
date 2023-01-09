@@ -1,7 +1,7 @@
 import React from "react";
-import ProBoneO from "./ProBoneO/ProBoneO";
 import Navbar from "./Navigation/navbar";
 import '../styles/welcome.css';
+import Lighthouse from "./Lighthouse/Lighthouse";
 
 function Welcome() {
 
@@ -13,13 +13,13 @@ function Welcome() {
         <div className="section">
         <div className="wrapper">
               <div className="typing-demo">
-                This is a portfolio by Rhys Wood.
+                THIS IS A PORTFOLIO BY RHYS WOOD.
               </div>
           </div>
         </div>
         
         <div className="section bg-blue">
-          <ProBoneO />
+          <Lighthouse />
         </div>
         
         <div className="section bg-green">
