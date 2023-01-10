@@ -1,17 +1,17 @@
 export const MenuItems = [
     {
         title: 'Goat Creative',
-        url: 'goat',
+        url: '#goat',
         cName: 'nav-links'
     },
     {
         title: 'Lighthouse Labs',
-        url: 'lighthouse',
+        url: '#lighthouse',
         cName: 'nav-links'
     },
     {
         title: 'Vessel Packaging',
-        url: 'vessel',
+        url: '#vessel',
         cName: 'nav-links'
     },
 

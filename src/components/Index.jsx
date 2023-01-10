@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "./Navigation/navbar";
 import '../styles/welcome.css';
 import Lighthouse from "./Lighthouse/Lighthouse";
+import Goat from "./Goat/Goat";
+import Vessel from "./Vessel/Vessel";
+import Contact from "./Contact/Contact";
 
 function Welcome() {
 
@@ -18,20 +21,20 @@ function Welcome() {
           </div>
         </div>
         
-        <div className="section bg-blue">
+        <div id="lighthouse" className="section bg-blue">
           <Lighthouse />
         </div>
         
-        <div className="section bg-green">
-          Content 3
+        <div id="goat" className="section bg-green">
+          <Goat />
         </div>
         
-        <div className="section">
-          Content 4
+        <div id="vessel" className="section">
+          <Vessel />
         </div>
         
-        <div className="section bg-blue">
-          Content 5
+        <div id="contact" className="section bg-blue">
+          <Contact />
         </div>
       </div>
 

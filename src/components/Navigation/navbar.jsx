@@ -15,6 +15,12 @@ const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!clicked);
+    const navOptions = document.querySelector('.nav-options');
+    if (clicked) {
+      navOptions.classList.remove('active');
+    } else {
+      navOptions.classList.add('active');
+    }
   };
   return (
     <nav ref={element} className="gone">
@@ -23,7 +29,7 @@ const Navbar = () => {
           <a href="/">RHYSWOOD</a>
         </div>
         <div className="menu-icon" onClick={handleClick}>
-          <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+          <i className={clicked ? "fas fa-times" : "fa-solid fa-bars"}></i>
         </div>
         <div className="nav-options">
         <ul className={clicked ? "nav-menu active" : "nav-menu"}>
