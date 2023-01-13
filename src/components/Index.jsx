@@ -5,7 +5,7 @@ import Goat from "./Goat/Goat";
 import Vessel from "./Vessel/Vessel";
 import Contact from "./Contact/Contact";
 import Welcome from "./Welcome/Welcome";
-import NavBar from "./Navigation/NavBar";
+import NavBar from "./Navigation/navbar";
 
 function Splash() {
 
