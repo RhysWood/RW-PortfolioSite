@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "./Navigation/NavBar";
 import '../styles/welcome.css';
 import Lighthouse from "./Lighthouse/Lighthouse";
 import Goat from "./Goat/Goat";
 import Vessel from "./Vessel/Vessel";
 import Contact from "./Contact/Contact";
 import Welcome from "./Welcome/Welcome";
+import NavBar from "./Navigation/NavBar";
 
 function Splash() {
 
