@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Welcome from "./components/Index";
+import Splash from "./components/Index";
 import Goat from "./components/Goat/Goat";
 import Lighthouse from "./components/Lighthouse/Lighthouse";
 import Vessel from "./components/Vessel/Vessel";
@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Splash />} />
           <Route path="/goat" element={<Goat />} />
           <Route path="/lighthouse" element={<Lighthouse />} />
           <Route path="/vessel" element={<Vessel />} />

@@ -51,3 +51,10 @@ code {
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
+
+@font-face {
+  font-family: 'RadioGrotesk-Regular';
+  src: local('MyFont'), url(./fonts/PPRadioGrotesk-Regular.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

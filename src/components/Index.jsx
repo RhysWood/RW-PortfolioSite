@@ -1,39 +1,35 @@
 import React from "react";
-import Navbar from "./Navigation/navbar";
+import NavBar from "./Navigation/NavBar";
 import '../styles/welcome.css';
 import Lighthouse from "./Lighthouse/Lighthouse";
 import Goat from "./Goat/Goat";
 import Vessel from "./Vessel/Vessel";
 import Contact from "./Contact/Contact";
+import Welcome from "./Welcome/Welcome";
 
-function Welcome() {
-
+function Splash() {
 
     return ( 
       <>
-      <Navbar />
+      <NavBar />
       <div className="wrapperparent">
         <div className="section">
-        <div className="wrapper">
-              <div className="typing-demo">
-                THIS IS A PORTFOLIO BY RHYS WOOD.
-              </div>
-          </div>
+          <Welcome />
         </div>
         
-        <div id="lighthouse" className="section bg-blue">
+        <div id="lighthouse" className="section bg-black">
           <Lighthouse />
         </div>
         
-        <div id="goat" className="section bg-green">
+        <div id="goat" className="section bg-white">
           <Goat />
         </div>
         
-        <div id="vessel" className="section">
+        <div id="vessel" className="section bg-black">
           <Vessel />
         </div>
         
-        <div id="contact" className="section bg-blue">
+        <div id="contact" className="section bg-white">
           <Contact />
         </div>
       </div>
@@ -43,4 +39,4 @@ function Welcome() {
      );
 }
 
-export default Welcome;
+export default Splash;

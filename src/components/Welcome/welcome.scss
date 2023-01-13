@@ -1,0 +1,42 @@
+.wrapper {
+    height: 100vh;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .top-right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: right;
+    h1{
+        font-size: 5.5vw;
+        font-family: 'RadioGrotesk-Regular';
+    }
+  }
+  
+  .bottom-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: left;
+    h1{
+        font-family: 'RadioGrotesk-Regular';
+        font-size: 5.5vw;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .top-right {
+      h1{
+            font-size: 9vw;
+      }
+    }
+
+    .bottom-left {
+      h1{
+            font-size: 9vw;
+      }
+    }
+  }

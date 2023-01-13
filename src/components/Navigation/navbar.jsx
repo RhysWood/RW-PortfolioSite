@@ -1,52 +1,28 @@
-import React, { useEffect, useRef, useState } from "react";
-import { MenuItems } from "./menuItems.jsx";
-import "../Navigation/nav.scss";
+import { useState, useEffect } from "react";
+import MobileNav from "./MobileNav";
+import DesktopNav from "./DesktopNav";
 
-const Navbar = () => {
-  const element = useRef(null);
+function NavBar() {
+  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      element.current.className = "fade-in";
-      console.log("fade in");
-    }, 3000);
-  }, []);
-
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    setClicked(!clicked);
-    const navOptions = document.querySelector('.nav-options');
-    if (clicked) {
-      navOptions.classList.remove('active');
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
     } else {
-      navOptions.classList.add('active');
+      setIsMobile(false);
     }
   };
-  return (
-    <nav ref={element} className="gone">
-      <div className="nav-wrapper">
-        <div className="nav-child">
-          <a href="/">RHYSWOOD</a>
-        </div>
-        <div className="menu-icon" onClick={handleClick}>
-          <i className={clicked ? "fas fa-times" : "fa-solid fa-bars"}></i>
-        </div>
-        <div className="nav-options">
-        <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-        </div>
-      </div>
-    </nav>
-  );
-};
 
-export default Navbar;
+  useEffect(() => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
+    }
+    window.addEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    isMobile ? <MobileNav /> : <DesktopNav />
+  );
+}
+
+export default NavBar;

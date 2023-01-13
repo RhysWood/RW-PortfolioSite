@@ -12,8 +12,7 @@
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: #bbf7cf;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     height: 60px;
     position: fixed;
     top: 0;
@@ -72,10 +71,7 @@
     display: none;
 }
 
-.menu-icon {
-    display: none;
-    /* margin-right: 20px; */
-}
+
 
 .welcomeName {
     color: #fcc860;
@@ -94,7 +90,7 @@
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-    margin-left: 14rem;
+    margin-left: 8rem;
     a {
         font-family: 'NeueMontreal-Book';
     }
@@ -114,115 +110,3 @@
   .gone {
     opacity: 0;
   }
-
-@media screen and (max-width: 960px) {
-    .nav-child {
-        justify-content: center;
-        margin-left: 0;
-    }
-    
-    .nav-options {
-        /* add a position property and set it to absolute */
-        position: absolute;
-        /* add a top property and set it to 60px to position it below the navbar */
-        top: 60px;
-        /* add a right property and set it to 0 to align it with the right edge of the navbar */
-        right: 0;
-        /* add a width property and set it to 100% to make it span the full width of the navbar */
-        width: 100%;
-        /* add a background-color property and set it to #bbf7cf to match the navbar's background color */
-        background-color: #bbf7cf;
-        /* add a box-shadow property to give the dropdown menu a drop shadow */
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-        /* add a display property and set it to none to hide the dropdown menu by default */
-        display: none;
-      }
-      
-      /* add a new class to show the dropdown menu when the menu icon is clicked */
-      .nav-options.active {
-        display: flex;
-      }
-      
-    .NavbarItems {
-        position: relative;
-    }
-
-    .nav-menu {
-        display: none;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        top: 80px;
-        left: -100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-    }
-
-    .nav-menu.active {
-        display: block;
-        /* remove the grid-template-columns and grid-gap properties */
-        list-style: none;
-        text-align: center;
-        width: 70vw;
-        justify-content: end;
-        margin-right: 7rem;
-        margin-top: 10px;
-      }
-
-    .nav-links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    .nav-links:hover {
-        background-color: #231f20;
-        border-radius: 0;
-    }
-
-    .navbar-logo{
-        position: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .menu-icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
-
-    .fa-times {
-        color: #fff;
-        font-size: 2rem;
-    }
-
-    .nav-links-mobile{
-        display: block;
-        text-align: center;
-        padding: 0.5rem;
-        margin: 2rem auto;
-        border-radius: 4px;
-        width: 80%;
-        background: #a2caa4;
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-
-    .nav-links-mobile:hover {
-        background: #fff;
-        color: #6668f4;
-        transition: 250ms;
-    }
-
-    Button {
-        display: none;
-    }
-
-}
