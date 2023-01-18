@@ -9,7 +9,7 @@ body {
   scroll-snap-type: y mandatory;
 }
 .section {
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,25 +17,6 @@ body {
   background-color: #fff;
   color: rgb(0, 0, 0);
   font-size: 3em;
-}
-
-.bg-black {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  color: black;
-}
-.bg-black {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  color: #fff;
-}
-
-.bg-green {
-  background: #16a180;
 }
 
 .typing-demo {

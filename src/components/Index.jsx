@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/welcome.css';
+import '../styles/index.scss';
 import Lighthouse from "./Lighthouse/Lighthouse";
 import Goat from "./Goat/Goat";
 import Vessel from "./Vessel/Vessel";
@@ -17,19 +17,19 @@ function Splash() {
           <Welcome />
         </div>
         
-        <div id="lighthouse" className="section bg-black">
+        <div id="lighthouse" className="section">
           <Lighthouse />
         </div>
         
-        <div id="goat" className="section bg-white">
+        <div id="goat" className="section">
           <Goat />
         </div>
         
-        <div id="vessel" className="section bg-black">
+        <div id="vessel" className="section">
           <Vessel />
         </div>
         
-        <div id="contact" className="section bg-white">
+        <div id="contact" className="section">
           <Contact />
         </div>
       </div>
