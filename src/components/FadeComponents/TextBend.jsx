@@ -4,14 +4,14 @@ export const TextBend = ({children}) => {
   const [matrix, setMatrix] = useState("matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)");
 
   useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY;
+    const handle = () => {
+      const y = window.Y;
       const matrix = `matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, ${y / 1000}, 1, 0, 0, 0, 0, 1)`;
       setMatrix(matrix);
     }
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("", handle);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("", handle);
     };
   }, []);
 

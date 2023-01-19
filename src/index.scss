@@ -16,6 +16,14 @@ code {
     monospace;
 }
 
+html,
+body {
+  &,
+  * {
+    cursor: none;
+  }
+}
+
 @font-face {
   font-family: 'NeueMontreal-Book';
   src: local('MyFont'), url(./fonts/PPNeueMontreal-Book.woff) format('woff');
