@@ -1,10 +1,11 @@
 .wrapper {
-    height: 100vh;
+    height: 95%;
     width: 90%;
     display: grid;
-    place-items: center start;
+    position: relative;
+    place-items: center stretch;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
   }
   
   .top-right {
@@ -12,8 +13,10 @@
     grid-row: 1 / 2;
     text-align: right;
     h1{
-        font-size: 5.5vw;
-        font-family: 'RadioGrotesk-Regular';
+        font-size: 9vw;
+        font-family: 'RadioGrotesk-Ultralight';
+        margin: 0;
+
     }
   }
   
@@ -22,8 +25,11 @@
     grid-row: 2 / 3;
     text-align: left;
     h1{
-        font-family: 'RadioGrotesk-Regular';
-        font-size: 5.5vw;
+        font-family: 'RadioGrotesk-Ultralight';
+        font-size: 10vw;
+        padding: 0;
+        margin: 0;
+        color: black;
     }
   }
 

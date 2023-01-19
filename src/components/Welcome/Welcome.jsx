@@ -7,10 +7,10 @@ function Welcome() {
     <>
       <div className="wrapper">
         <div className="top-right">
-            <h1>Full-Stack Web Developer</h1>
+            <h1>Web Developer</h1>
         </div>
         <div className="bottom-left">
-            <h1>Rhys Wood</h1>
+            <h1>Rhys<br></br> Wood</h1>
         </div>
       </div>
     </>

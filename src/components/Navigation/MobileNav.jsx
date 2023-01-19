@@ -15,7 +15,7 @@ const MobileNav = () => {
   return (
     <nav className="nav-wrapper">
       <div className="nav-child-mobile">
-        <a href="/">RHYSWOOD</a>
+        <a href="/">RW</a>
       </div>
 
         <div id="menuToggle">

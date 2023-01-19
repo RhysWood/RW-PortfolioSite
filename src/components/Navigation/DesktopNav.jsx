@@ -14,10 +14,10 @@ const DesktopNav = () => {
   }, []);
 
   return (
-    <nav ref={element} className="gone">
+    <nav ref={element} className="gone fxt">
       <div className="nav-wrapper">
         <div className="nav-child">
-          <a href="/">RHYSWOOD</a>
+          <a href="/">RW</a>
         </div>
         <div className="nav-options">
           <ul className="nav-menu">

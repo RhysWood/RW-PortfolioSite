@@ -1,14 +1,12 @@
 import * as React from 'react';
 import './lighthouse.scss'; 
 
-function Lighthouse() {
 
+function Lighthouse() {
 
     return (
         <>
-        <div>
-            Lighthouse
-        </div>
+        <h1>Lighthouse</h1>
         </>
     );
 }
