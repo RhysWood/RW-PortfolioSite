@@ -20,9 +20,10 @@
     top: 0;
     width: 100%;
     z-index: 100;
+    mix-blend-mode: difference;
     a {
         text-decoration: none;
-        color: #231f20;
+        color: white;
     }
 }
 
