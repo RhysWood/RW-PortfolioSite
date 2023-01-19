@@ -16,12 +16,14 @@ code {
     monospace;
 }
 
-html,
-body {
-  &,
-  * {
-    cursor: none;
-  }
+@media only screen and (min-width: 720px) {
+  html,
+  body {
+    &,
+    * {
+      cursor: none;
+    }
+  }  
 }
 
 @font-face {
