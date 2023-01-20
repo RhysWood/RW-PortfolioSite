@@ -6,6 +6,7 @@ import Vessel from "./Vessel/Vessel";
 import Contact from "./Contact/Contact";
 import Welcome from "./Welcome/Welcome";
 import NavBar from "./Navigation/navbar";
+import Footer from "./Navigation/Footer";
 
 function Splash() {
 
@@ -34,7 +35,7 @@ function Splash() {
         </div>
       </div>
 
-        
+        <Footer />
       </>
      );
 }

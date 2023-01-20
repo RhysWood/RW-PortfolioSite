@@ -27,6 +27,27 @@
     }
 }
 
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+    height: 60px;
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    mix-blend-mode: difference;
+    a {
+        text-decoration: none;
+        color: white;
+        margin-right: 3rem;
+        font-family: 'NeueMontreal-Book';
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+}
+
 .navbar-logo {
     mix-blend-mode: difference;
     color: #fff;
@@ -86,6 +107,20 @@
     margin-right: 1rem;
 }
 
+// .footer {
+//     background: transparent;
+//     height: 100px;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+//     font-size: 1.2rem;
+//     padding-left: 1em;
+//     padding-right: 1em;
+//     margin-top: 1rem;
+//     p {
+//         color: black
+//     }
+// }
 
 
 .nav-child {
