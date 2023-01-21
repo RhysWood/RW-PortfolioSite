@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import gsap from 'gsap';
 import "./welcome.scss";
 import SplitText from '../utils/Split3.min.js';
 
@@ -6,9 +7,17 @@ function Welcome() {
 
   useEffect(() => {
     const split = new SplitText(".block", {
-      type: "split",
+      type: "lines",
       linesClass: "lineChildren",
     });
+    
+    gsap.to(split.lines, {
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: 'power2',
+    })
   }, []);
 
 
