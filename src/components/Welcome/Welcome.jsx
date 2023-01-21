@@ -10,6 +10,11 @@ function Welcome() {
       type: "lines",
       linesClass: "lineChildren",
     });
+
+    const splitParent = new SplitText(".block", {
+      type: "lines",
+      linesClass: "lineParent",
+    });
     
     gsap.to(split.lines, {
       duration: 1,

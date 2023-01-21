@@ -14,7 +14,7 @@ const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [preloader, setPreloader] = useState(true);
   useLocoScroll(!preloader);
-  const [timer, setTimer] = useState(3);
+  const [timer, setTimer] = useState(1);
 
   
   const timeoutId = useRef(null);
