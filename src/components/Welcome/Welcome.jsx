@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./welcome.scss";
+import SplitText from '../utils/Split3.min.js';
 
 function Welcome() {
+
+  useEffect(() => {
+    const split = new SplitText(".block", {
+      type: "split",
+      linesClass: "lineChildren",
+    });
+  }, []);
+
 
   return (
     <div className="welcome"
