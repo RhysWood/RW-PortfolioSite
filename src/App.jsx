@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Splash from "./components/Index";
+import Home from "./components/Index";
 import Goat from "./components/Goat/Goat";
 import Lighthouse from "./components/Lighthouse/Lighthouse";
 import Vessel from "./components/Vessel/Vessel";
@@ -13,7 +13,7 @@ function App() {
     <CustomCursor />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Splash />} />
+          <Route path="/" element={<Home />} />
           <Route path="/goat" element={<Goat />} />
           <Route path="/lighthouse" element={<Lighthouse />} />
           <Route path="/vessel" element={<Vessel />} />

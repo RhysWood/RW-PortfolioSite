@@ -5,6 +5,7 @@
 .wrapper {
     height: 95%;
     width: 90%;
+    padding-top: 5rem;
     margin: 0 auto;
     display: grid;
     position: relative;
@@ -54,10 +55,9 @@
     grid-area: 1 / 2 / 2 / 3;
     width: 100%;
     font-weight: 800;
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 3vw;
+    line-height: 4vw;;
     font-family: 'RadioGrotesk-Ultralight';
-
   }
   
 

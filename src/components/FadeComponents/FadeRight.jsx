@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export const FadeRight = ({ children, duration = 2 }) => {
+const FadeRight = ({ children, duration = 2 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -21,3 +21,5 @@ export const FadeRight = ({ children, duration = 2 }) => {
     </div>
   );
 };
+
+export default FadeRight;

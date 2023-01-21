@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useRef, useEffect} from "react";
 import '../styles/index.scss';
 import Lighthouse from "./Lighthouse/Lighthouse";
 import Goat from "./Goat/Goat";
@@ -8,36 +8,77 @@ import Welcome from "./Welcome/Welcome";
 import NavBar from "./Navigation/navbar";
 import Footer from "./Navigation/Footer";
 
-function Splash() {
+const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [preloader, setPreloader] = useState(true);
+  const [timer, setTimer] = useState(3);
+  
+  const timeoutId = useRef(null);
+  
+  const clear = () => {
+    clearTimeout(timeoutId.current);
+    setPreloader(false);
+  };
+  
+  useEffect(() => {
+    if (timer > 0) {
+      timeoutId.current = setTimeout(() => {
+        setTimer(timer - 1);
+        console.log(timer);
+      }, 1000);
+    } else {
+      clear();
+    }
+  }, [timer]);
+
+
+  useEffect(() => {
+    if (!preloader) {
+      setTimeout(() => {
+        setIsVisible(true);
+      }, 100);
+    }
+  }, [preloader]);
+
 
     return ( 
       <>
-      <NavBar />
-      <div className="wrapperparent">
-        <div className="section">
-          <Welcome />
+      {preloader? (
+        <div className="loader-wrapper absolute" ref={timeoutId}>
+          <h1>RW</h1>
+        </div> )
+      : (
+      <>
+        <div className={`fade-in-all ${isVisible ? "show" : ""}`}>
+        <NavBar />
+        <div className="wrapperparent">
+          <div className="section">
+            <Welcome />
+          </div>
+    
+          <div id="goat" className="section">
+            <Goat />
+          </div>
+    
+          <div id="lighthouse" className="section">
+            <Lighthouse />
+          </div>
+    
+          <div id="vessel" className="section">
+            <Vessel />
+          </div>
+    
+          <div id="contact" className="section">
+            <Contact />
+          </div>
         </div>
-        
-        <div id="lighthouse" className="section">
-          <Lighthouse />
-        </div>
-        
-        <div id="goat" className="section">
-          <Goat />
-        </div>
-        
-        <div id="vessel" className="section">
-          <Vessel />
-        </div>
-        
-        <div id="contact" className="section">
-          <Contact />
-        </div>
-      </div>
-
         <Footer />
+        </div>
+      </>)
+      }
       </>
      );
+    
 }
 
-export default Splash;
+export default Home;
