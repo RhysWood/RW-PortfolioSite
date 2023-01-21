@@ -1,20 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { MenuItems } from "./menuItems.jsx";
 import "../Navigation/nav.scss";
 
 const DesktopNav = () => {
-  const element = useRef(null);
-
-
-  useEffect(() => {
-    setTimeout(() => {
-      element.current.className = "fade-in";
-      console.log("fade in");
-    }, 0);
-  }, []);
 
   return (
-    <nav ref={element} className="gone">
+    <nav className="desktop-nav">
       <div className="nav-wrapper">
         <div className="nav-child">
           <a href="/">RW</a>

@@ -7,11 +7,15 @@ import Contact from "./Contact/Contact";
 import Welcome from "./Welcome/Welcome";
 import NavBar from "./Navigation/navbar";
 import Footer from "./Navigation/Footer";
+import useLocoScroll from "./hooks/useLocoScroll";
 
 const Home = () => {
+
   const [isVisible, setIsVisible] = useState(false);
   const [preloader, setPreloader] = useState(true);
+  useLocoScroll(!preloader);
   const [timer, setTimer] = useState(3);
+
   
   const timeoutId = useRef(null);
   
@@ -49,6 +53,7 @@ const Home = () => {
         </div> )
       : (
       <>
+      <div className="main-container" id="main-container" data-scroll-container>
         <div className={`fade-in-all ${isVisible ? "show" : ""}`}>
         <NavBar />
         <div className="wrapperparent">
@@ -73,6 +78,7 @@ const Home = () => {
           </div>
         </div>
         <Footer />
+        </div>
         </div>
       </>)
       }

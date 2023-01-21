@@ -4,6 +4,9 @@ import "./welcome.scss";
 function Welcome() {
 
   return (
+    <div className="welcome"
+      data-scroll-section  
+    >
     <div className="block">
       <div className="wrapper">
         <div className="top-right">
@@ -23,6 +26,7 @@ function Welcome() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
