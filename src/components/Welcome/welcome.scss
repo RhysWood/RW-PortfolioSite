@@ -58,6 +58,16 @@
     font-size: 3vw;
     line-height: 4vw;;
     font-family: 'RadioGrotesk-Ultralight';
+    p {
+      opacity: 0;
+      > div {
+        opacity: 0;
+        transform: translateY(0px);
+      }
+      &.is-reveal {
+        opacity: 1;
+      }
+    }
   }
   
 
@@ -73,6 +83,35 @@
             font-size: 9vw;
       }
     }
+
+  .intro-wrapper {
+    height: 100%;
+    width: 90%;
+    padding-top: 6rem;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+
+  }
+
+    .intro-text {
+      width: 100%;
+      font-weight: 800;
+      font-size: 7vw;
+      line-height: 8vw;;
+      font-family: 'RadioGrotesk-Ultralight';
+      p {
+        opacity: 0;
+        > div {
+          opacity: 0;
+          transform: translateY(0px);
+        }
+        &.is-reveal {
+          opacity: 1;
+        }
+      }
+    }
+    
   }
 
   .lineChildren {

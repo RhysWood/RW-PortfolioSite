@@ -1,6 +1,7 @@
 import React, {useState, useRef, useEffect} from "react";
 import '../styles/index.scss';
 import Lighthouse from "./Lighthouse/Lighthouse";
+import IntroText from "./Welcome/IntroText";
 import Goat from "./Goat/Goat";
 import Vessel from "./Vessel/Vessel";
 import Contact from "./Contact/Contact";
@@ -59,6 +60,10 @@ const Home = () => {
         <div className="wrapperparent">
           <div className="section">
             <Welcome />
+          </div>
+
+          <div className="section">
+            <IntroText />
           </div>
     
           <div id="goat" className="section">
