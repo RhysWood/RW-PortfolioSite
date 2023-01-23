@@ -76,18 +76,22 @@
 
   @media only screen and (max-width: 900px) {
     .wrapper {
-      display: block;
-    }
+      display: flex;
+      height: 80vh;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+  }
+  
     .top-right {
       h1{
-            font-size: 15vw;
-            margin-bottom: 5rem;
+        font-size: 15vw;
       }
     }
 
     .bottom-left {
       h1{
-            font-size: 15vw;
+        font-size: 15vw;
       }
     }
 
