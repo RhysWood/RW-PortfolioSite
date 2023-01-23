@@ -36,7 +36,7 @@ function IntroText() {
         <div className={cn("intro-wrapper", {'is-reveal' : reveal})} data-scroll-section>
         <div className="intro-text">
           <p ref={ref} id="para" className={cn({'is-reveal' : reveal})}>
-          Full-Stack developer based in Vancouver, BC. Passion for creating dynamic, user-friendly websites and applications. 
+          Full-Stack developer based in Vancouver, BC. Passion for creating dynamic, user- friendly websites and applications. 
           Strong background in front-end & back-end technologies. Able to bring ideas to life from start to finish. 
           Take a look at my work and let's connect to discuss how I can help bring your next project to life.
           </p>

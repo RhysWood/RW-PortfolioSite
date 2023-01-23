@@ -3,12 +3,14 @@ import '../styles/index.scss';
 import Lighthouse from "./Lighthouse/Lighthouse";
 import IntroText from "./Welcome/IntroText";
 import Goat from "./Goat/Goat";
+import Gallery from "./Gallery/Gallery";
 import Vessel from "./Vessel/Vessel";
 import Contact from "./Contact/Contact";
 import Welcome from "./Welcome/Welcome";
 import NavBar from "./Navigation/navbar";
 import Footer from "./Navigation/Footer";
 import useLocoScroll from "./hooks/useLocoScroll";
+
 
 const Home = () => {
 
@@ -65,7 +67,11 @@ const Home = () => {
           <div className="section">
             <IntroText />
           </div>
-    
+
+          {/* <div id="gallery" className="section">
+            <Gallery />
+          </div>
+     */}
           <div id="goat" className="section">
             <Goat />
           </div>
