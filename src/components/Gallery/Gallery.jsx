@@ -52,7 +52,9 @@ function GalleryItem({
     if (onScreen) {
       updateActiveImage(index);
     }
-  }, [onScreen, index]);
+  }, [onScreen, index, updateActiveImage]);
+
+  console.log(onScreen );
 
   return (
     <div
@@ -121,7 +123,7 @@ export default function Gallery({ src, index, columnOffset }) {
         </div>
         {images.map((image, index) => (
           <GalleryItem
-            key={src}
+            key={image.src}
             index={index}
             {...image}
             updateActiveImage={handleUpdateActiveImage}
