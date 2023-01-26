@@ -60,7 +60,6 @@ const Home = () => {
       <div className="main-container" id="main-container" data-scroll-container>
         <div className={`fade-in-all ${isVisible ? "show" : ""}`}>
         <NavBar />
-        {/* <div className="wrapperparent"> */}
           <div className="section">
             <Welcome />
           </div>

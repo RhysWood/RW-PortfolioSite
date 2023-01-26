@@ -16,13 +16,9 @@ function useOnScreen(ref, threshold) {
       }
     );
     const currentRef = ref.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
+    observer.observe(currentRef);
     return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
+      observer.unobserve(currentRef);
     };
   }, [ref, threshold]); // Empty array ensures that effect is only run on mount and unmount
 

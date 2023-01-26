@@ -52,13 +52,12 @@ function GalleryItem({
     if (onScreen) {
       updateActiveImage(index);
     }
-  }, [onScreen, index, updateActiveImage]);
-
-  console.log(onScreen );
+    // eslint-disable-next-line
+  }, [onScreen]);
 
   return (
     <div
-      className={cn("gallery-item-wrapper", { "is-reveal": onScreen })}
+      className={cn("gallery-item-wrapper", {"is-reveal" : onScreen})}
       ref={ref}
     >
       <div></div>
