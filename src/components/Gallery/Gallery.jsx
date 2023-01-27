@@ -2,20 +2,20 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import useOnScreen from "../hooks/useOnScreen";
+import TimImage from '../../imgs/goat.gif'
 import cn from "classnames";
 
 import "./style.scss";
 
 const images = [
   {
-    src:"../Imgs/Tim.png",
+    
     title: "FRONT-END DEVELOPMENT",
     subtitle: "Fully Craft-CMS Integrated",
     category: "meetgoat.com", 
   },
   {
-    src:
-      "https://images.unsplash.com/photo-1558603668-6570496b66f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=100",
+    src: TimImage,
     title: "Cereus Penuvianus",
     subtitle: "Live the Beauty",
     category: "Shooting / Adv.Campaing",
