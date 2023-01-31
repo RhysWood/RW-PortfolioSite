@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import useOnScreen from "../hooks/useOnScreen";
-import TimImage from '../../imgs/goat.gif'
+import site from '../../imgs/goat.gif'
+import snippet from '../../imgs/snippet.png'
 import cn from "classnames";
 
 import "./style.scss";
@@ -15,24 +16,23 @@ const images = [
     category: "meetgoat.com", 
   },
   {
-    src: TimImage,
-    title: "Cereus Penuvianus",
-    subtitle: "Live the Beauty",
-    category: "Shooting / Adv.Campaing",
+    src: site,
+    title: "",
+    subtitle: "",
+    category: "",
+  },
+  {
+  
+    title: "BACK-END DEVELOPMENT",
+    subtitle: "Node.js, Express, MongoDB",
+    category: "Vessel Packaging Project",
   },
   {
     src:
-      "https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=100",
-    title: "Calliope",
-    subtitle: "Live the Beauty",
-    category: "Shooting / Adv.Campaing",
-  },
-  {
-    src:
-      "https://images.unsplash.com/photo-1611145367651-6303b46e4040?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2006&q=100",
-    title: "Golden Pothos",
-    subtitle: "Living Room",
-    category: "Shooting / Adv.Campaing",
+      snippet,
+    title: "",
+    subtitle: "",
+    category: "",
   },
 ];
 function GalleryItem({
