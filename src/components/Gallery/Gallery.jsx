@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import useOnScreen from "../hooks/useOnScreen";
 import site from '../../imgs/goat.gif'
-import snippet from '../../imgs/snippet.png'
+import carbon5 from '../../imgs/carbon-5.png'
 import cn from "classnames";
 
 import "./style.scss";
@@ -29,7 +29,7 @@ const images = [
   },
   {
     src:
-      snippet,
+      carbon5,
     title: "",
     subtitle: "",
     category: "",
