@@ -68,13 +68,12 @@ const Home = () => {
             <IntroText />
           </div>
 
-          <div id="gallery">
-            <Gallery />
-          </div>
-
-    
           <div id="lighthouse" className="section">
             <Lighthouse />
+          </div>
+
+          <div id="gallery">
+            <Gallery />
           </div>
 
           {/* <div id="vessel" className="section">
