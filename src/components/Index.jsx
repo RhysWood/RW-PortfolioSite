@@ -71,13 +71,15 @@ const Home = () => {
           <div id="gallery">
             <Gallery />
           </div>
-      {/* <div className="main-container-2" id="main-container-2">
-            <Goat />
-        </div> */}
+
     
           <div id="lighthouse" className="section">
             <Lighthouse />
           </div>
+
+          {/* <div id="vessel" className="section">
+            <Goat />
+          </div> */}
     
           <div id="vessel" className="section">
             <Vessel />

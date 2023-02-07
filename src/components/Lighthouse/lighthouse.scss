@@ -1,11 +1,138 @@
-// .fade-in-element {
-//     opacity: 0;
-//     transform: translateX(-100%);
-//     transition: all 2s;
-//   }
+.block {
+    height: 100%;
+  }
   
-//   .fade-in-element.visible {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
+  .wrapper {
+      height: 95%;
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+      position: relative;
+      place-items: center stretch;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+    }
+    
+    .top-right {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      text-align: right;
+      h1{
+          font-size: 9vw;
+          font-family: 'RadioGrotesk-Ultralight';
+          margin: 0;
   
+      }
+    }
+    
+    .bottom-left {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      text-align: left;
+      h1{
+          font-family: 'RadioGrotesk-Ultralight';
+          font-size: 10vw;
+          padding: 0;
+          margin: 0;
+          color: black;
+      }
+    }
+  
+    .intro-wrapper-title {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        position: relative;
+        place-items: start start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+      }
+  
+    .intro-text-title {
+      grid-area: 1 / 1 / 2 / 2;
+      width: 100%;
+      font-weight: 800;
+      font-size: 3vw;
+      line-height: 4vw;;
+      font-family: 'RadioGrotesk-Ultralight';
+      text-align:justify;
+      text-align-last:justify;
+  
+      p {
+        opacity: 0;
+        > div {
+          opacity: 0;
+          transform: translateY(0px);
+        }
+        &.is-reveal {
+          opacity: 1;
+        }
+      }
+    }
+    
+  
+    @media only screen and (max-width: 900px) {
+      .wrapper {
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    
+      .top-right {
+        h1{
+          font-size: 15vw;
+        }
+      }
+  
+      .bottom-left {
+        h1{
+          font-size: 15vw;
+        }
+      }
+  
+    .intro-wrapper-title {
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+  
+    }
+  
+      .intro-text-title {
+        width: 100%;
+        font-weight: 800;
+        font-size: 7vw;
+        line-height: 8vw;;
+        font-family: 'RadioGrotesk-Ultralight';
+        text-align:justify;
+        text-align-last:justify;
+        p {
+          opacity: 0;
+          > div {
+            opacity: 0;
+            transform: translateY(0px);
+          }
+          &.is-reveal {
+            opacity: 1;
+          }
+        }
+      }
+      
+    }
+  
+    .lineChildren {
+      transform: translate(0, 500px);
+    }
+  
+    .lineParent {
+      overflow: hidden;
+    }
+
+
+.lighthouse-container {
+    background-color: #d53f41;
+}
