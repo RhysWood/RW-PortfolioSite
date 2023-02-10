@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function useOnScreen(ref, threshold) {
+function useOnScreen(ref, threshold = 0.3) {
   // State and setter for storing whether element is visible
   const [isIntersecting, setIntersecting] = useState(false);
 
@@ -16,9 +16,13 @@ function useOnScreen(ref, threshold) {
       }
     );
     const currentRef = ref.current;
-    observer.observe(currentRef);
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
     return () => {
-      observer.unobserve(currentRef);
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
     };
   }, [ref, threshold]); // Empty array ensures that effect is only run on mount and unmount
 

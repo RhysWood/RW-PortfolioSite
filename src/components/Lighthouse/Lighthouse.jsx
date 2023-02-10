@@ -1,17 +1,15 @@
-import React from 'react';
-import Title from './Title.jsx';
+import React from "react";
+import Title from "./Title.jsx";
 import "./lighthouse.scss";
 
 function Lighthouse() {
-
-
-    return(
-        <>
-        <div className="lighthouse-container">
+  return (
+    <>
+      <div className="lighthouse-container">
         <Title />
-        </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }
 
 export default Lighthouse;

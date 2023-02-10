@@ -1,15 +1,24 @@
-import React from 'react';
+import React, {useRef, useState, useEffect} from 'react';
+import cn from 'classnames';
+import useOnScreen from '../hooks/useOnScreen';
 import LighthouseText from './LighthouseText';
 import "./lighthouse.scss";
 import "./title.scss";
-import ISS from '../InternationalSpace/ISS';
 
 function Title() {
-  
+  const ref = useRef(null);
+  const [reveal, setReveal] = useState(false);
+  const onScreen = useOnScreen(ref);
+
+  useEffect(() => {
+    if(onScreen) {
+        setReveal(onScreen);
+    }
+  }, [onScreen]);
     
     return(
       <div data-scroll-container>
-      <div className='my-wrap' data-scroll-section="">
+      <div ref ={ref} className={cn("my-wrap", {'is-reveal' : reveal})} data-scroll-section="">
         <span class="lerp-wrap" data-scroll="">
           <span data-scroll="" data-scroll-delay="0.09" data-scroll-speed="6">L</span>
           <span data-scroll="" data-scroll-delay="0.07" data-scroll-speed="6">-</span>
@@ -26,7 +35,6 @@ function Title() {
         </span>
       </div>
       <LighthouseText />
-      <ISS />
     </div>
     )
 }
