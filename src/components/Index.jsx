@@ -74,7 +74,7 @@ const Home = () => {
 
           <div id="gallery">
             <Gallery />
-          </div>
+          </div> 
 
           {/* <div id="vessel" className="section">
             <Goat />

@@ -1,6 +1,10 @@
 .block {
     height: 100%;
   }
+
+  .lighthouse-container {
+    margin-top: 10vh;
+  }
   
   .wrapper {
       height: 95%;
@@ -131,8 +135,3 @@
     .lineParent {
       overflow: hidden;
     }
-
-
-.lighthouse-container {
-    background-color: #d53f41;
-}

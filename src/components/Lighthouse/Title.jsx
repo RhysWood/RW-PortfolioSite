@@ -2,6 +2,7 @@ import React from 'react';
 import LighthouseText from './LighthouseText';
 import "./lighthouse.scss";
 import "./title.scss";
+import ISS from '../InternationalSpace/ISS';
 
 function Title() {
   
@@ -25,6 +26,7 @@ function Title() {
         </span>
       </div>
       <LighthouseText />
+      <ISS />
     </div>
     )
 }

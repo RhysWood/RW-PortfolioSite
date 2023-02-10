@@ -1,6 +1,5 @@
 import React from 'react';
 import Title from './Title.jsx';
-import LighthouseText from './LighthouseText.jsx';
 import "./lighthouse.scss";
 
 function Lighthouse() {
@@ -10,7 +9,6 @@ function Lighthouse() {
         <>
         <div className="lighthouse-container">
         <Title />
-
         </div>
         </>
     )
