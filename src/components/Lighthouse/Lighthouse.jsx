@@ -10,7 +10,7 @@ function Lighthouse() {
         <>
         <div className="lighthouse-container">
         <Title />
-        <LighthouseText />
+
         </div>
         </>
     )

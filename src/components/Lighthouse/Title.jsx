@@ -1,4 +1,5 @@
 import React from 'react';
+import LighthouseText from './LighthouseText';
 import "./lighthouse.scss";
 import "./title.scss";
 
@@ -23,6 +24,7 @@ function Title() {
           <span data-scroll="" data-scroll-delay="0.04" data-scroll-speed="6">S</span>
         </span>
       </div>
+      <LighthouseText />
     </div>
     )
 }

@@ -36,9 +36,8 @@ function LighthouseText() {
         <div className={cn("intro-wrapper-title", {'is-reveal' : reveal})} data-scroll-section>
         <div className="intro-text-title">
           <p ref={ref} id="para" className={cn({'is-reveal' : reveal})}>
-          Graduated from Lighthouse Labs with a Full Stack Web Development diploma. 
-          Hands-on training in front-end and back-end tech. Comprehensive curriculum with real-world projects. 
-          Supportive instructors and strong peer network. Confident in my web development skills for future career growth.
+          During my Diplolma with Lighthouse Labs, I learned multiple languages and frameworks. Keep scrolling to 
+          see some of my projects examples - I also created this portfolio using ReactJS.
           </p>
         </div>
       </div>
