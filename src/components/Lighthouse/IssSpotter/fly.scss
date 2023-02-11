@@ -1,0 +1,29 @@
+body {
+    font-family: 'NeueMontreal-Book';
+    margin: 0;
+    padding: 0;
+  }
+  .my-wrap2 {
+    position: relative;
+    height: 50vh;
+    color: #222;
+    display: grid;
+    place-content: end center;
+  }
+
+  .lerp-wrap2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+    line-height: 1.1;
+  }
+  .lerp-wrap2 span {
+    position:absolute;
+    color: #222;
+    width:100px;
+    height:100px;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    font-size: clamp(64px, 6vw, 16vw);
+}

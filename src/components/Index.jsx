@@ -3,7 +3,7 @@ import '../styles/index.scss';
 import Lighthouse from "./Lighthouse/Lighthouse";
 import IntroText from "./Welcome/IntroText";
 // import Goat from "./Goat/Goat";
-import Gallery from "./Gallery/Gallery";
+// import Gallery from "./Gallery/Gallery";
 import Vessel from "./Vessel/Vessel";
 import Contact from "./Contact/Contact";
 import Welcome from "./Welcome/Welcome";
@@ -68,25 +68,25 @@ const Home = () => {
             <IntroText />
           </div>
 
-          <div id="lighthouse" className="section">
+          <div className="section">
             <Lighthouse />
           </div>
 
-          <div id="gallery">
+          {/* <div id="gallery">
             <Gallery />
-          </div> 
+          </div>  */}
 
           {/* <div id="vessel" className="section">
             <Goat />
           </div> */}
     
-          <div id="vessel" className="section">
+          {/* <div id="vessel" className="section">
             <Vessel />
           </div>
     
           <div id="contact" className="section">
             <Contact />
-          </div>
+          </div> */}
         </div>
         <Footer />
         </div>
