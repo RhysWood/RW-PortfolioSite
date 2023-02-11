@@ -1,47 +1,6 @@
-.block {
-    height: 100%;
-  }
-
   .lighthouse-container {
     height: 100%;
-    display: block;
   }
-  
-  .wrapper {
-      height: 95%;
-      width: 90%;
-      margin: 0 auto;
-      display: grid;
-      position: relative;
-      place-items: center stretch;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-    }
-    
-    .top-right {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-      text-align: right;
-      h1{
-          font-size: 9vw;
-          font-family: 'RadioGrotesk-Ultralight';
-          margin: 0;
-  
-      }
-    }
-    
-    .bottom-left {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      text-align: left;
-      h1{
-          font-family: 'RadioGrotesk-Ultralight';
-          font-size: 10vw;
-          padding: 0;
-          margin: 0;
-          color: black;
-      }
-    }
   
     .intro-wrapper-title {
         height: 100%;

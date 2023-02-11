@@ -1,5 +1,17 @@
+.fly-container{
+    display:flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .iss-container {
-    height: 100%;
+    display:flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .iss-header {
@@ -8,11 +20,9 @@
     align-items: center;
     padding: 0 2rem;
     height: 10vh;
-    background-color: #191919;
-    color: white;
+    color: black;
     font-family: 'NeueMontreal-Book';
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 5rem;
     text-decoration: none;
 }
-
