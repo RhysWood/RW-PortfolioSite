@@ -1,28 +1,24 @@
 body {
     font-family: 'NeueMontreal-Book';
-    margin: 0;
-    padding: 0;
   }
   .my-wrap2 {
-    position: relative;
-    height: 10vh;
+    // position: relative;
     color: #222;
-    display: grid;
-    place-content: center;
+    img {
+      width: 50%;
+    }
   }
 
   .lerp-wrap2 {
-    display: inline-block;
     vertical-align: middle;
-    margin-left: 0.25rem;
     line-height: 1.1;
     // transform: rotate(-45deg) translate(-50%, -50%);
   }
   .lerp-wrap2 span {
-    position:absolute;
+    // position:absolute;
     color: #222;
-    width:200px;
-    height:200px;
+    // width:200px;
+    // height:200px;
     font-size: large;
     display: inline-flex;
     justify-content:center;
