@@ -5,7 +5,7 @@ import cn from 'classnames';
 import useOnScreen from '../../hooks/useOnScreen';
 import "./iss.scss";
 import Fly from "./Fly";
-
+import issTerminal from '../../../imgs/issTerminal.png'
 
 function IssSpotter() {
   const ref = useRef(null);
@@ -44,13 +44,16 @@ useEffect(() => {
         </div>
         <div className="spotter-text-title">
           <p ref={ref} id="para3" className={cn({'is-reveal' : reveal})} data-scroll-section>
-          <span>Next pass at Fri Feb 11 2023 12:01:08 GMT+0000 (Coordinated Universal Time) for 224 seconds!</span>
-          <span>Next pass at Fri Feb 11 2023 22:07:48 GMT+0000 (Coordinated Universal Time) for 705 seconds!</span>
-          <span>Next pass at Sat Feb 12 2023 08:14:28 GMT+0000 (Coordinated Universal Time) for 477 seconds!</span>
-          <span>Next pass at Sat Feb 12 2023 18:21:08 GMT+0000 (Coordinated Universal Time) for 176 seconds!</span>
-          <span>Next pass at Sun Feb 13 2023 04:27:48 GMT+0000 (Coordinated Universal Time) for 456 seconds!</span>
+          <img src={issTerminal} alt="iss terminal" className="iss-terminal" />
           </p>
         </div>
+      </div>
+
+      <div className={cn("iss-text", {'is-reveal' : reveal})} data-scroll-section>
+          The ISS Spotter is a web application that allows users to track the International Space Station (ISS) in real time. 
+          The ISS Spotter project taught me how to make, manipulate & itegrate API requests. The mini app takes in a users IP address
+          using ipify, uses this IP address to find the users location using FreeGeoIP and passes it into the iss-pass url request.
+
       </div>
     </>
   );
