@@ -2,7 +2,7 @@ import React, {useRef, useState, useEffect} from 'react';
 import cn from 'classnames';
 import useOnScreen from '../../hooks/useOnScreen';
 
-import "./fly.scss";
+import "./iss.scss";
 
 function Fly() {
   const ref = useRef(null);
@@ -18,6 +18,7 @@ function Fly() {
     return(
       <div className='fly-container' data-scroll-container>
       <div ref ={ref} className={cn("my-wrap2", {'is-reveal' : reveal})} data-scroll-section="">
+        <h6>Networking, HTTP & API integration</h6>
         <h1 className='iss-header'>ISS Spotter</h1>
           <span class="lerp-wrap2" data-scroll="">
             <span data-scroll="" data-scroll-direction="horizontal" data-scroll-delay="0.18" data-scroll-speed="9">🛰️</span>

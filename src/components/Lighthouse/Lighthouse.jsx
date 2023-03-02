@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./Title.jsx";
 import IssSpotter from "./IssSpotter/IssSpotter";
+import Tinyapp from "./tinyApp/Tinyapp.jsx";
 import "./lighthouse.scss";
 
 function Lighthouse() {
@@ -9,6 +10,7 @@ function Lighthouse() {
       <div className="lighthouse-container">
         <Title />
         <IssSpotter />
+        <Tinyapp />
       </div>
     </>
   );

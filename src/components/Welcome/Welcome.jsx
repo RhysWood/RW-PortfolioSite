@@ -34,7 +34,7 @@ function Welcome() {
     <div className="block">
       <div className="wrapper">
         <div className="top-right">
-            <h1>Web Developer</h1>
+            <h1>Full-Stack Developer</h1>
         </div>
         <div className="bottom-left">
             <h1>Rhys<br></br> Wood</h1>
