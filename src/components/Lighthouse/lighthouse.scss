@@ -4,25 +4,17 @@
   }
   
     .intro-wrapper-title {
-        height: 100%;
-        width: 90%;
-        margin: 0 auto;
-        display: grid;
-        position: relative;
-        place-items: start start;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0% 10%;
       }
   
     .intro-text-title {
-      grid-area: 1 / 1 / 2 / 2;
-      width: 100%;
+      order: 1;
       font-weight: 800;
       font-size: 3vw;
       line-height: 4vw;;
       font-family: 'RadioGrotesk-Ultralight';
-      text-align:justify;
-      text-align-last:justify;
   
       p {
         opacity: 0;

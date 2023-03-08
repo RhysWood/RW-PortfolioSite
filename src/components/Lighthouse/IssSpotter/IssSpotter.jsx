@@ -36,24 +36,23 @@ useEffect(() => {
 
 
   return (
-    <div className='outer-wrap' data-scroll-container>
+    <div className='outer-wrap'>
 
       <div className={cn("spotter-wrapper-title", {'is-reveal' : reveal})} data-scroll-container>
         <div className='spotter-moving-title'>
           <Fly />
         </div>
         <div className="spotter-text-title">
-          <p ref={ref} id="para3" className={cn({'is-reveal' : reveal})} data-scroll-section>
+          <p ref={ref} className={cn({'is-reveal' : reveal})} data-scroll-section>
           <img src={issTerminal} alt="iss terminal" className="iss-terminal" />
           </p>
         </div>
       </div>
 
       <div id="para3" className={cn("iss-text", {'is-reveal' : reveal})} data-scroll-section>
-          The ISS Spotter is a web application that allows users to track the International Space Station (ISS) in real time. 
+          The ISS Spotter is a web application that allows users to track the International Space Station in real time. 
           The ISS Spotter project taught me how to make, manipulate & itegrate API requests. The mini app takes in a users IP address
-          using ipify, uses this IP address to find the users location using FreeGeoIP and passes it into the iss-pass url request.
-
+          using ipify, uses this IP address to find the users location using FreeGeoIP and passes it into the iss url request.
       </div>
     </div>
   );
