@@ -36,7 +36,7 @@ function LighthouseText() {
         <div className={cn("intro-wrapper-title", {'is-reveal' : reveal})} data-scroll-section>
         <div className="intro-text-title">
           <p ref={ref} id="para2" className={cn({'is-reveal' : reveal})}>
-          During my Diplolma with Lighthouse Labs, I learned multiple languages and frameworks. Keep scrolling to 
+          During my Diploma with Lighthouse Labs, I learned multiple languages and frameworks. Keep scrolling to 
           see some of my projects examples - I also created this portfolio using ReactJS.
           </p>
         </div>
